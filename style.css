@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -200,5 +203,149 @@ color: #c2185b;
     gap: 15px;
     text-align: center;
   }
+  .about-content {
+    flex-direction: column;
+  }
+  .about-image img {
+    width: 100%;
+    height: 250px;
+  }
 
+}
+
+/* Секция О нас */
+
+.about {
+    padding: 80px 40px;
+    background-color: #fff0f5;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.about-text p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+.about-text h2 {
+    font-size: 36px;
+    color: #c2185b;
+    margin-bottom: 20px;
+}
+.about-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(194, 24, 91, 0.5);
+}
+
+/*анимация появляется*/
+
+section {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+ 
+/*Уведомление о добавление в карзину*/
+
+.notification {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #c2185b;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.notification.show {
+    opacity: 1;
+}
+
+/*Секция корзины*/
+
+.cart {
+    padding: 80px 40px;
+    background-color: #fff;
+    text-align: center;
+}
+.cart h2 {
+    font-size: 36px;
+    color: #c2185b;
+    margin-bottom: 40px;
+}
+
+/*Пустая корзина*/
+
+.cart-empty {
+    color: #888;
+    font-size: 18px;
+    padding: 40px;
+    text-align: center;
+
+}
+
+/*1 товар в корз*/
+
+.cart-items {
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background-color: #fff0f5;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto 10px auto;
+    text-align: center;
+}
+.cart-items span {
+    font-size: 16px;
+    color: #333;
+}
+.cart-items strong {
+    font-size: 16px;
+    color: #c2185b;
+}
+
+/*Удалить корз*/
+
+.cart-items button {
+    background: none;
+    border: none;
+    color: #c2185b;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*Итог*/
+
+.cart-total {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #333;
+}
+
+/*Кнопка оформить*/
+
+.cart-order-btn {
+    margin-top: 20px;
+    background-color: #c2185b;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
 }

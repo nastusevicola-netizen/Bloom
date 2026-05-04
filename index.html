@@ -12,17 +12,18 @@
             <h1>🌸 Bloom</h1>
             <nav>
              <ul>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Каталог</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#catalog">Каталог</a></li>
                 <li><a href="#">Доставка</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#cart">Корзина</a></li>
              </ul>
             </nav>
         </header>
         <section class="hero">
             <h2>Цветы с доставкой за 2 часа</h2>
             <p>Свежие букеты для любого повода</p>
-            <button>Смотреть каталог</button>
+            <a href="#catalog"><button>Смотреть каталог</button></a>
         </section>
         <section class="features">
             <div>
@@ -38,7 +39,8 @@
                 <h3>Удобная оплата</h3>
             </div>
         </section>
-        <section class="catalog">
+
+        <section class="catalog" id="catalog">
             <h2>Наш каталог</h2>
             <div class="catalog-grid">
                 <div class="card">
@@ -97,11 +99,40 @@
             </div>
             </div>
         </section>
-        <footer>
-            <p>© 2025 Bloom</p>
+
+        <section class="about" id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>О нас</h2>
+                    <p>Bloom — это цветочный магазин с душой. Мы работаем с 2018 года и за это время подарили тысячи улыбок нашим клиентам.</p>
+                    <p>Каждый букет мы собираем вручную из свежих цветов которые привозим напрямую от проверенных поставщиков.</p>
+                    <p>Наша миссия — сделать каждый момент особенным.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1558861122-40aa75d3a841?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=500" alt="Наш магазин">
+                </div>
+            </div>
+        </section>
+
+        <section class="cart" id="cart">
+            <h2>Корзина</h2>
+            <div class="cart-items" id="cart-items">
+                <p class="cart-empty">Корзина пуста 🌸</p>
+            </div>
+            <div class="cart-total" id="cart-total" style="display: none">
+                <p>Итого: <span id="total-price">0</span>₽</p>
+                <button class="cart-order-btn">Оформить заказ</button>
+            </div>
+        </section>
+        <footer id="contacts">
+            <p>© 2026 Bloom</p>
             <a href="https://t.me/o_shengeliya">Telegram</a>
             <a href="#">WhatsApp</a>
             <a href="#">Instagram</a>
         </footer>
+        <script src="script.js"></script>
+        <div class="notification" id="notification">
+             🌸 Товар добавлен в корзину!
+        </div>
     </body>
 </html>
