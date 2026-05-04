@@ -162,3 +162,41 @@ color: #c2185b;
     cursor: pointer;
     font-size: 14px;
 }
+/* Адаптивность для телефона */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .catalog-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+}
