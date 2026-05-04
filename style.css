@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+header {
+    background-color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 10;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.hero {
+    background-color: #fff0f5;
+    padding: 100px 40px;
+    text-align: center;
+}
+.hero h2 {
+    font-size: 48px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+.hero button {
+    background-color: #c2185b;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.features {
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #fff;
+}
+.features div {
+    text-align: center;
+    padding: 30px;
+    border-radius: 16px;
+    background-color: #fff0f5;
+    width: 200px;
+}
+.features div p {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+.features div h3 {
+    color: #c2185b;
+    font-size: 16px;
+}
+footer {
+    background-color: #c2185b;
+    color: white;
+    text-align: center;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.hero button:hover {
+    background-color: #880e4f;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transform: color 0,3s ease;
+}
+nav ul li a:hover {
+color: #c2185b;
+}
+.features div:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+.catalog {
+    padding: 60px 40px;
+    background-color: #fff;
+    text-align: center;
+}
+.catalog h2 {
+    font-size: 36px;
+    color: #c2185b;
+    margin-bottom: 40px;
+}
+.catalog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.card {
+    width: 280px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    flex-shrink: 0;
+}
+.card img {
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+}
+.card-info {
+    padding: 20px;
+    text-align: left;
+}
+.card-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+}
+.card-info p {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.card-info span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c2185b;
+}
+.card-info button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #c2185b;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+}
